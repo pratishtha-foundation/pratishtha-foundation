@@ -7,7 +7,7 @@
 <meta name="description" content="A foundation in memory of Dr Pratishtha (Rimi) Chatterjee, supporting early-career researchers in cerebral disease research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #1d2233;
@@ -23,7 +23,7 @@
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased; }
-  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0 0 .5em; }
+  h1, h2, h3 { font-family: Newsreader, Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0 0 .5em; }
   a { color: var(--indigo); }
   img { max-width: 100%; height: auto; display: block; }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
@@ -31,7 +31,7 @@
 
   header.nav { padding: 20px 0; }
   header.nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-  .brand { font-family: Fraunces, serif; font-weight: 600; font-size: 1.1rem; color: var(--indigo-dark); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .brand { font-family: Newsreader, serif; font-weight: 600; font-size: 1.1rem; color: var(--indigo-dark); text-decoration: none; display: flex; align-items: center; gap: 10px; }
   .brand svg { width: 30px; height: 30px; flex: none; }
   nav a { margin-left: 22px; text-decoration: none; color: var(--muted); font-weight: 500; font-size: .93rem; }
   nav a:hover { color: var(--indigo); }
@@ -55,10 +55,10 @@
   section h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--indigo-dark); }
   section p { color: #333b4c; font-size: 1.05rem; }
   .intro { max-width: 62ch; color: var(--muted); }
-  .letter { font-family: Fraunces, Georgia, serif; font-size: 1.3rem; line-height: 1.6; color: var(--indigo-dark); }
-  .signoff { font-family: Fraunces, serif; font-style: italic; color: var(--indigo-dark); font-size: 1.15rem; margin-top: 24px; }
+  .letter { font-family: Newsreader, Georgia, serif; font-size: 1.3rem; line-height: 1.6; color: var(--indigo-dark); }
+  .signoff { font-family: Newsreader, serif; font-style: italic; color: var(--indigo-dark); font-size: 1.15rem; margin-top: 24px; }
 
-  blockquote { margin: 34px 0; padding: 6px 0 6px 24px; border-left: 3px solid var(--accent); font-family: Fraunces, serif; font-style: italic; font-size: 1.5rem; color: var(--indigo-dark); line-height: 1.35; }
+  blockquote { margin: 34px 0; padding: 6px 0 6px 24px; border-left: 3px solid var(--accent); font-family: Newsreader, serif; font-style: italic; font-size: 1.5rem; color: var(--indigo-dark); line-height: 1.35; }
   blockquote cite { display: block; margin-top: 8px; font-family: Inter, sans-serif; font-style: normal; font-size: .9rem; color: var(--muted); }
 
   figure.scan { margin: 40px 0 0; background: #000; border-radius: 18px; overflow: hidden; }
@@ -84,6 +84,13 @@
   .links a:hover { border-color: var(--indigo); transform: translateY(-1px); }
   .links small { display: block; font-weight: 400; color: var(--muted); margin-top: 2px; }
 
+  .videos { display: grid; gap: 24px; margin-top: 32px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .video { margin: 0; }
+  .frame { position: relative; aspect-ratio: 16 / 9; background: #10172f; border-radius: 16px; overflow: hidden; }
+  .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .frame .fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 16px; text-align: center; color: #d4daee; font-size: .95rem; }
+  .frame .fallback a { color: #f0c98e; font-weight: 600; }
+  .video figcaption { margin-top: 10px; font-size: .92rem; color: var(--muted); }
   .note { margin-top: 28px; font-size: .98rem; color: var(--muted); }
   .notice { margin-top: 36px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 24px 28px; max-width: 760px; }
   .notice h3 { font-size: 1.15rem; color: var(--indigo-dark); margin-bottom: .4em; }
@@ -165,8 +172,8 @@
         <span class="status">2026 applications are now closed</span>
         <p>Offered for the first time in the Dementia Australia Research Foundation's 2026 Grant Program, this annual grant supports women and culturally and linguistically diverse researchers studying strategies for earlier, more accessible and more accurate dementia diagnosis.</p>
         <p>The grant is currently supported by Professor Abhay Singh, to advance research into cerebral diseases. From 2028, it will be supported by the Pratishtha Chatterjee Foundation for Neuroscience, once the foundation is established. It honours her significant contributions to dementia research, including through grants she received from the Dementia Australia Research Foundation.</p>
-        <p>The grant gives fellow researchers exactly the kind of exposure Pratishtha believed in. Future rounds will be announced by the <a class="inline" href="https://www.linkedin.com/company/dementia-australia-research-foundation/" target="_blank" rel="noopener">Dementia Australia Research Foundation</a>.</p>
-        <a class="btn" href="https://lnkd.in/gjxvQgFB" target="_blank" rel="noopener">Find out more about the grant</a>
+        <p>The grant gives fellow researchers exactly the kind of exposure Pratishtha believed in. Future rounds will be announced by the <a class="inline" href="https://www.dementia.org.au/research/dementia-australia-research-foundation-grants" target="_blank" rel="noopener">Dementia Australia Research Foundation</a>.</p>
+        <a class="btn" href="https://www.dementia.org.au/research/dementia-australia-research-foundation-grants" target="_blank" rel="noopener">Find out more about the grant</a>
       </div>
     </div>
   </section>
@@ -218,12 +225,27 @@
     <div class="wrap">
       <div class="eyebrow">Her work</div>
       <h2>To know more about Dr Chatterjee.</h2>
+      <div class="videos">
+        <figure class="video">
+          <div class="frame">
+            <div class="fallback"><a href="https://youtu.be/Mr1iMy6RaFI" target="_blank" rel="noopener">Watch on YouTube</a></div>
+            <iframe src="https://www.youtube-nocookie.com/embed/Mr1iMy6RaFI" title="Dr Pratishtha Chatterjee | New pathway for Lewy body dementia detection and treatment" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <figcaption>Dr Pratishtha Chatterjee | New pathway for Lewy body dementia detection and treatment</figcaption>
+        </figure>
+        <figure class="video">
+          <div class="frame">
+            <div class="fallback"><a href="https://vimeo.com/1098090829" target="_blank" rel="noopener">Watch on Vimeo</a></div>
+            <iframe src="https://player.vimeo.com/video/1098090829" title="Dr Pratishtha Chatterjee: Additional features (Medicine Today)" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <figcaption>Dr Pratishtha Chatterjee: Additional features (Medicine Today)</figcaption>
+        </figure>
+      </div>
       <ul class="links">
+        <li><a href="https://www.dementia.org.au/media-centre/media-releases/26-million-funding-round-drive-dementia-research" target="_blank" rel="noopener">The grant announcement<small>Dementia Australia media release</small></a></li>
         <li><a href="https://lnkd.in/gwbZF3Te" target="_blank" rel="noopener">LinkedIn<small>Her professional profile</small></a></li>
-        <li><a href="https://lnkd.in/gBK3wZ-G" target="_blank" rel="noopener">Dementia Australia<small>Her research profile</small></a></li>
-        <li><a href="https://lnkd.in/gNTvAZh3" target="_blank" rel="noopener">Google Scholar<small>Her publications</small></a></li>
-        <li><a href="https://lnkd.in/gfmPgHxx" target="_blank" rel="noopener">In her own words (1)<small>Interview</small></a></li>
-        <li><a href="https://lnkd.in/gzpX3bgn" target="_blank" rel="noopener">In her own words (2)<small>Interview</small></a></li>
+        <li><a href="https://www.dementia.org.au/research/our-researchers/pratishtha-chatterjee-0" target="_blank" rel="noopener">Dementia Australia<small>Her research profile</small></a></li>
+        <li><a href="https://scholar.google.com/citations?user=HAKXZeMAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar<small>Her publications</small></a></li>
       </ul>
     </div>
   </section>
