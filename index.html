@@ -97,9 +97,12 @@
   .notice p { margin: 0 0 .7em; font-size: 1rem; color: #333b4c; }
   .notice p:last-child { margin-bottom: 0; }
 
+  .memorial { text-align: center; padding: 64px 24px 8px; font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 1.3rem; line-height: 1.5; color: var(--indigo-dark); }
+  .memorial::before { content: ""; display: block; width: 48px; height: 2px; background: var(--accent); margin: 0 auto 22px; }
+  .memorial span { display: block; margin-top: 6px; font-family: Inter, sans-serif; font-style: normal; font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   footer { padding: 36px 0 52px; color: var(--muted); font-size: .88rem; }
   footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  footer .support { flex-basis: 100%; border-top: 1px solid var(--line); padding-top: 18px; margin-top: 4px; max-width: 70ch; }
+  footer .support { flex: 0 0 100%; border-top: 1px solid var(--line); padding-top: 18px; margin: 4px 0 0; }
 
   @media (max-width: 820px) {
     .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
@@ -133,7 +136,7 @@
   <div class="hero">
     <div class="wrap">
       <div>
-        <span class="badge">In loving memory </span>
+        <span class="badge">In loving memory</span>
         <h1>Pratishtha Chatterjee Foundation for Neuroscience</h1>
         <p class="lead">In memory of Dr Pratishtha (Rimi) Chatterjee. Supporting young researchers from diverse backgrounds in progressing research into cerebral diseases, including AVM, dementia and related disorders.</p>
         <a class="btn" href="#grant">The memorial grant</a>
@@ -245,12 +248,17 @@
       <div class="eyebrow">A note from Abhay</div>
       <h2>For Pratishtha, always.</h2>
       <p class="letter">My grief for Pratishtha will never end, and neither will my love for her, or hers for me. I feel her love every day.</p>
-      <p class="letter">Pratishtha believed that exposure is the greatest influence in life, and she was committed to opening doors for the next generation of researchers. This foundation is how that generosity will continue: supporting young scientists from diverse backgrounds, and helping to move forward the research she cared about, so that people living with these conditions have more hope of a healthier, longer life.</p>
+      <p class="letter">Pratishtha believed that exposure is the greatest influence in life, and she was committed to opening doors for the next generation of researchers. This foundation is how that generosity will continue: supporting young scientists from diverse backgrounds to advance research into cerebral diseases, including dementia, the field she dedicated her career to, and AVM, the condition she lived with, so that people living with these conditions have more hope of a healthier, longer life.</p>
       <p class="letter">Her legacy will live on forever through the work of the researchers it supports.</p>
       <p class="signoff">Abhay Singh</p>
     </div>
   </section>
 </main>
+
+<div class="memorial">
+  In loving memory of Dr Pratishtha (Rimi) Chatterjee
+  <span>Taken from us too soon, 26 November 2025</span>
+</div>
 
 <footer>
   <div class="wrap">
