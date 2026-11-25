@@ -213,7 +213,7 @@
       <div class="notice">
         <h3>About the foundation's status</h3>
         <p>The Pratishtha Chatterjee Foundation for Neuroscience is a private giving fund. It is currently being established, pending approval from the Australian Charities and Not-for-profits Commission (ACNC), and will begin operating soon.</p>
-        <p>For further information, please contact <a href="mailto:abhaykumarsingh1985@gmail.com">abhaykumarsingh1985@gmail.com</a>.</p>
+        <p>For further information, please <a class="mail" href="#contact" data-u="abhaykumarsingh1985" data-d="gmail.com">get in touch</a><noscript> (email address requires JavaScript)</noscript>.</p>
       </div>
     </div>
   </section>
@@ -267,10 +267,15 @@
 <footer>
   <div class="wrap">
     <span>&copy; 2026 Pratishtha Chatterjee Foundation for Neuroscience. A private giving fund, being established pending ACNC approval.</span>
-    <span>Contact: <a href="mailto:abhaykumarsingh1985@gmail.com">abhaykumarsingh1985@gmail.com</a></span>
     <p class="support">If anything on this page has prompted questions or concerns about dementia, in Australia you can call the National Dementia Helpline on 1800 100 500 (24 hours, 7 days a week) or visit <a href="https://www.dementia.org.au" target="_blank" rel="noopener">dementia.org.au</a>.</p>
   </div>
 </footer>
 
+<script>
+  // Build the email link in the browser so the address is not written out in the page text.
+  document.querySelectorAll('a.mail').forEach(function (a) {
+    a.href = 'mailto:' + a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+  });
+</script>
 </body>
 </html>
